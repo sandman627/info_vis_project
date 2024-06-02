@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Worldwide Power Plants</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+        <style>
+            .land {
+                fill: #f0f0f0;
+                stroke: #ccc;
+            }
+            .graticule {
+                fill: none;
+                stroke: #777;
+                stroke-width: 0.5px;
+                stroke-opacity: 0.5;
+            }
+            .power-plant {
+                fill: #f00;
+                stroke: #000;
+            }
+            /* Added styles to ensure the scatter plot SVG is visible */
+            svg {
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Worldwide Power Plants</h1>
+        <h2>Worldwide Power Plants Cartography</h2>
+
+        <!-- button for world wide information -->
+
+        <!-- Cartography of world for interaction -->
+        <script src="components/cartography.js"></script>
+        <p>The map below shows the locations of power plants worldwide:</p>
+
+        <h2>Worldwide Power Plants change by year</h2>
+        <script src="components/scatterplot.js"></script>
+
+        <h2>Worldwide Power Plants change by type</h2>
+        <!-- <script src="components/test1.js"></script> -->
+    </body>
+</html>
