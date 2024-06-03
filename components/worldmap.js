@@ -105,25 +105,25 @@ function show_interactive_world_map(width = 960, height = 500) {
                 .enter()
                 .append("circle")
                 .attr("cx", function(d) {
-                    console.log("CX Dot Longitude:", d.longitude);
-                    console.log("CY Dot Latitude:", d.latitude);
+                    // console.log("CX Dot Longitude:", d.longitude);
+                    // console.log("CY Dot Latitude:", d.latitude);
                     return projection([d.longitude, d.latitude])[0];
                 })
                 .attr("cy", function(d) {
-                    console.log("CY Dot Longitude:", d.longitude);
-                    console.log("CY Dot Latitude:", d.latitude);
+                    // console.log("CY Dot Longitude:", d.longitude);
+                    // console.log("CY Dot Latitude:", d.latitude);
                     return projection([d.longitude, d.latitude])[1];
                 })
                 .attr("r", 2)
                 .attr("fill", "red")
                 .attr("opacity", 0.6)
                 .on("mouseover", function(event, d) {
-                    console.log("Mouseover:", d);
-                    console.log("Dot Longitude:", d.longitude);
-                    console.log("Dot Latitude:", d.latitude);
-                    console.log("Dot Name:", d.name);
-                    console.log("Dot Country:", d.country_long);
-                    console.log("Dot Capacity:", d.capacity_mw);
+                    // console.log("Mouseover:", d);
+                    // console.log("Dot Longitude:", d.longitude);
+                    // console.log("Dot Latitude:", d.latitude);
+                    // console.log("Dot Name:", d.name);
+                    // console.log("Dot Country:", d.country_long);
+                    // console.log("Dot Capacity:", d.capacity_mw);
 
                     tooltip.transition()
                         .duration(200)
